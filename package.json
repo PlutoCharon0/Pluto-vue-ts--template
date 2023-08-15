@@ -16,8 +16,12 @@
   "lint-staged": {
     "src/**/*.{vue,js,jsx,ts,tsx,json}": [
       "npm run lint",
-      "prettier --write"
+      "prettier . --write"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:PlutoCharon0/Pluto-vue-ts--template.git"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.1.0",
