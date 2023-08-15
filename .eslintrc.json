@@ -1,0 +1,54 @@
+{
+  // "lint": "eslint . --ext .ts,.vue --fix && stylelint **/*.css **/*.vue --fix",
+  // https://zh-hans.eslint.org/docs/latest/rules/
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:vue/vue3-essential",
+    "eslint-config-prettier"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "parser": "@typescript-eslint/parser",
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "vue",
+    "prettier"
+  ],
+  "rules": {
+    "vue/multi-word-component-names": "off", // 禁用vue文件强制多个单词命名
+    "@typescript-eslint/no-explicit-any": "off", // 允许使用 any类型
+    "@typescript-eslint/no-this-alias": [
+      "error",
+      {
+        "allowedNames": [
+          "that"
+        ] // 指定 可存储this指向的变量名称
+      }
+    ],
+    "no-console": [
+      "warn",
+      {
+        "allow": [
+          "warn",
+          "error"
+        ] // 代码提交时不允许存在 console.log()
+      }
+    ],
+    "no-undef": "off",
+    "no-debugger": "warn", // 代码提交时不允许存在 debugger 语句 作为断点
+    "no-empty": "error", // 不允许出现空代码块
+    "for-direction": "error", // 不允许出现死循环
+    "no-async-promise-executor": "error", // 禁止异步 Promise 执行器函数。
+    "@typescript-eslint/no-unused-vars": "warn" // 禁止出现未使用的变量
+  }
+}
