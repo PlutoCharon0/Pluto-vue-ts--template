@@ -2,6 +2,21 @@
 
 This template should help get you started developing with Vue 3 in Vite.
 
+## Features
+- 👑 Vue3 
+- ⚡️ Vite
+- 💎 TypeScript
+- 🚥 ESlint
+- 🌞 Prettier
+- ✨ Stylelint
+- 🎁 Lint-staged
+- 🚨 Commitlint
+- 🎷 husky
+
+## Plugin matching
+* [unplugin-auto-import/vite](https://github.com/antfu/unplugin-auto-import)
+* [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components)
+
 ## Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
